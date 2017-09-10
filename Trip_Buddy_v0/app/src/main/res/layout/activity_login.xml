@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="@color/LoginBackground"
+android:layout_height="match_parent"
+    android:gravity="center"
+tools:context="com.example.fiveguys.trip_buddy_v0.Login">
+
+<Button
+    android:id="@+id/btnSignin"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@color/WordDark"
+    android:text="Sign in"
+    android:textAllCaps="false"
+    android:textColor="@color/colorPrimary"
+    android:layout_above="@+id/btnSignup"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="11dp" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        style="@style/edtTextStyle"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="User's email"
+        android:inputType="text" />
+
+<EditText
+    style="@style/edtTextStyle"
+    android:id="@+id/edtPassword"
+    android:gravity="center"
+    android:hint="Password"
+    android:layout_width="250dp"
+    android:layout_height="40dp"
+    android:ems="10"
+    android:inputType="textPassword"
+    android:layout_above="@+id/btnGBpassword"
+    android:layout_alignStart="@+id/edtUser"
+    />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Password"
+    android:textColor="@color/WordLight"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:layout_above="@+id/edtPassword"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="10dp" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Email Address"
+    android:textColor="@color/WordLight"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:layout_above="@+id/edtUser"
+    android:layout_alignEnd="@+id/btnSignin"
+    android:layout_marginBottom="13dp" />
+
+<Button
+    android:id="@+id/btnSignup"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@color/WordLight"
+    android:text="Sign Up"
+    android:textAllCaps="false"
+    android:textColor="@color/colorPrimary"
+    android:layout_above="@+id/textView5"
+    android:layout_alignStart="@+id/btnSignin"
+    android:layout_marginBottom="14dp" />
+
+<TextView
+    android:id="@+id/textView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="You can continue with the following "
+    android:textColor="@color/colorPrimaryDark"
+    android:layout_above="@+id/btnFSignin"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="10dp" />
+
+<com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnFSignin"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/btnGSignin"
+    android:layout_centerHorizontal="true" />
+
+<com.google.android.gms.common.SignInButton
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/btnGSignin"
+    android:layout_alignParentBottom="true"
+    android:layout_alignStart="@+id/btnFSignin"
+    android:layout_marginBottom="27dp"
+    android:layout_alignEnd="@+id/btnFSignin" />
+
+<TextView
+    android:id="@+id/btnGBpassword"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:background="@color/LoginBackground"
+    android:text="Forget your password?"
+    android:textAllCaps="false"
+    android:textSize="15sp"
+    android:layout_above="@+id/btnSignin"
+    android:layout_alignEnd="@+id/edtPassword"
+    android:layout_marginBottom="34dp" />
+
+</RelativeLayout>

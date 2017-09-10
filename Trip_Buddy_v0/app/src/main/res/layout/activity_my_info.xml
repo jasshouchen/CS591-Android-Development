@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fiveguys.trip_buddy_v0.MyInfo">
+
+    <ImageView
+        android:id="@+id/UserImag"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        app:srcCompat="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textColor="@color/WordLight"
+        android:textSize="20sp"
+        android:layout_below="@+id/UserImag"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="@color/WordDark"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex"
+        android:textColor="@color/WordLight"
+        android:textSize="20sp"
+        android:layout_below="@+id/edtUserName"
+        android:layout_centerHorizontal="true"
+         />
+
+    <EditText
+        android:id="@+id/editUserSex"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/WordDark"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Age"
+        android:textColor="@color/WordLight"
+        android:textSize="20sp"
+        android:layout_below="@+id/editUserSex"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edtUserAge"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/WordDark"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView6"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite"
+        android:textColor="@color/WordLight"
+        android:textSize="20sp"
+        android:layout_below="@+id/edtUserAge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edtUserFav"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_below="@+id/textView7"
+        android:inputType="textPersonName"
+        android:textColor="@color/WordDark"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/txtEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit your profile"
+        android:textColor="@color/DarkGreen"
+        android:layout_below="@+id/edtUserFav"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+
+</RelativeLayout>

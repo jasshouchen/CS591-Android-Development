@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Search Image</string>
+    <string name="search_hint">Search Here</string>
+    <string name="deleteTitle">Delete</string>
+    <string name="search_title">Search images</string>
+</resources>

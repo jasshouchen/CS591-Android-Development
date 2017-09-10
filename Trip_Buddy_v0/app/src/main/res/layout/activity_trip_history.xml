@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fiveguys.trip_buddy_v0.TripHistory">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:overScrollMode="always"
+        android:isScrollContainer="true"
+        android:overScrollHeader="@color/LoginBackground"
+        android:id="@+id/historyList"
+         />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/WordDark"
+        android:minHeight="40dp"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+    <Button
+        android:id="@+id/backBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_back_arrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/backBtn"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_toEndOf="@+id/backBtn"
+        android:text="Trip History" />
+
+
+</RelativeLayout>

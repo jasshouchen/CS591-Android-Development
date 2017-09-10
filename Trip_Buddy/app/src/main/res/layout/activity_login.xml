@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/LoginBackground"
+    android:layout_height="match_parent"
+    tools:context="com.example.caozhongli.tripbuddy.Login">
+
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/WordDark"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/btnGBpassword"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/roundedttext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/edtUser"
+        android:layout_alignStart="@+id/edtUser"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/roundedttext"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Password"
+        android:textColor="@color/WordLight"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edtUser"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textColor="@color/WordLight"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@color/WordLight"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/btnSignin"
+        android:layout_alignLeft="@+id/btnSignin"
+        android:layout_alignStart="@+id/btnSignin" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="You can continue with the following "
+        android:textColor="@color/colorPrimaryDark" />
+
+    <com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnFSignin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/btnGSignin"
+        android:layout_below="@+id/btnFSignin"
+        android:layout_marginTop="14dp"
+        android:layout_alignRight="@+id/btnFSignin"
+        android:layout_alignEnd="@+id/btnFSignin"
+        android:layout_alignLeft="@+id/btnFSignin"
+        android:layout_alignStart="@+id/btnFSignin" />
+
+    <TextView
+        android:id="@+id/btnGBpassword"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/edtPassword"
+        android:layout_alignRight="@+id/edtPassword"
+        android:layout_below="@+id/edtPassword"
+        android:background="@color/LoginBackground"
+        android:text="Forget your password?"
+        android:textAllCaps="false"
+        android:textSize="8sp" />
+
+</RelativeLayout>

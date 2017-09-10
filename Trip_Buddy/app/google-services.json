@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "371160954353",
+    "firebase_url": "https://tripbuddy-d38e3.firebaseio.com",
+    "project_id": "tripbuddy-d38e3",
+    "storage_bucket": "tripbuddy-d38e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371160954353:android:4cd4194025dd5766",
+        "android_client_info": {
+          "package_name": "com.example.caozhongli.tripbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371160954353-piehk867c5tse0pbgcgj3lngbelh36h9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.caozhongli.tripbuddy",
+            "certificate_hash": "1fac38705f7f6a518eef48622cfdffaa41bd8fe1"
+          }
+        },
+        {
+          "client_id": "371160954353-l3fjbgm0ph5u64lrs12cgp18jgdj8pos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-Tu_JFGFpVr3QTSvzx9kqHgJIRVIGSkE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371160954353-l3fjbgm0ph5u64lrs12cgp18jgdj8pos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
